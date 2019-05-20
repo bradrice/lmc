@@ -1,0 +1,22 @@
+.home-head {
+    border-radius: 0;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    color: #fff !important;
+    background-position: 50%, 50%;
+    padding: .25rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cross-and-flame {
+    max-height: 150px;
+}
+
+.cross-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+{% load wagtailcore_tags wagtailimages_tags %}
+
+{% block content %}
+
+    {% image self.banner_image fill-2858x640 as img %}
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="home-head" style="background-image: url('{{ img.url }}');">
+                <img class="img-fluid cross-and-flame" src="{% static 'images/cross-and-flame-color-1058x1818.png' %}" alt="cross and flame"/>
+                <h1 class="display-5">
+                    {{ self.banner_title }}
+                </h1>
+                {% if self.banner_cta %}
+                    <a class="btn btn-primary btn-lg" href="#" role="button">@todo</a>
+                {% endif %}
+            </div>   
+        </div>
+    </div>
+     
+{% endblock %}

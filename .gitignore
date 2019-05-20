@@ -26,6 +26,9 @@ MANIFEST
 *.manifest
 *.spec
 
+#MacOS
+*.DS_Store
+
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
@@ -55,6 +58,10 @@ db.sqlite3
 # Flask stuff:
 instance/
 .webassets-cache
+
+#Wagtail stuff:
+__pycache__/
+*.pyc
 
 # Scrapy stuff:
 .scrapy
