@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load wagtailcore_tags %}
+{% load wagtailcore_tags wagtailimages_tags %}
 
 {% block content %}
     <div class="page-title">
@@ -16,10 +17,15 @@
             </div>
         </div>
     </div>
-
-    {% for block in page.content %}
-    <div class="block-content">
-        {% include_block block %}
+    <div class="row">
+        <div class="block-content col-sm-8">
+            {% for block in page.content %}
+                {% include_block block %}
+            {% endfor %}
+        </div>
+        <div class="col-sm-4">
+            {% image self.page_image fill-480x640 as img %}
+            <img src="{{ img.url }}" class="img-fluid" alt="image"/>
+        </div>
     </div>
-    {% endfor %}
 {% endblock %} 
