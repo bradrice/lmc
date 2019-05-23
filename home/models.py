@@ -27,13 +27,16 @@ class HomePage(Page):
         blank=True,
         on_delete=models.SET_NULL,
         related_name="+"
-   )
+    )
+    feature_story = RichTextField(blank=True)
+
 
     content_panels = Page.content_panels + [
         FieldPanel("banner_title"),
         FieldPanel("banner_subtitle"),
         ImageChooserPanel("banner_image"),
-        PageChooserPanel("banner_cta")
+        PageChooserPanel("banner_cta"),
+        FieldPanel("feature_story")
     ]
 
     class Meta:
