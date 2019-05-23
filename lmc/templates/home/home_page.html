@@ -1,7 +1,11 @@
 {% extends "base.html" %}
 {% load static %}
 {% load wagtailcore_tags wagtailimages_tags %}
-
+{% block head_extra_js %}
+<script src="https://unpkg.com/react@16.7.0/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@16.7.0/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+{% endblock %}
 {% block content %}
 
     {% image self.banner_image fill-2858x640 as img %}
@@ -17,6 +21,35 @@
                 {% endif %}
             </div>   
         </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="carousel"></div>
+            </div>
+        </div>
     </div>
      
+{% endblock %}
+
+{% block extra_js %}
+<script type="text/babel">
+            
+    const lakeList = [
+        {id: 1, name: "Echo Lake", trailhead: "Echo Lake"}, 
+        {id: 2, name: "Maud Lake", trailhead: "Wright's Lake"}, 
+        {id: 3, name: "Cascade Lake", trailhead: "Bayview"}
+    ];
+
+    const App = ({lakes}) => (
+        <ul>
+            {lakes.map(lake => 
+                <li key={lake.id}>{lake.name} | Trailhead: {lake.trailhead}</li>    
+            )}
+        </ul>
+    )
+    
+    ReactDOM.render(
+        <App lakes={lakeList}/>,
+        document.getElementById("carousel")
+    );
+    </script>
 {% endblock %}
