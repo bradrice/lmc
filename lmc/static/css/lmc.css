@@ -72,3 +72,7 @@ a, .navbar-light, .nav-link {
 footer a {
     color: #050C95;
 }
+
+.joyous-calendar-content {
+    padding: 2rem;
+}

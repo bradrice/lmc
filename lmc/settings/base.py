@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     'flex',
     'streams',
     'standard',
+    'lumccal',
 
     'wagtail.contrib.forms',
     'wagtail.contrib.redirects',
@@ -45,6 +46,8 @@ INSTALLED_APPS = [
 
     'modelcluster',
     'taggit',
+    'ls.joyous',
+    'wagtail.contrib.modeladmin',
 
     'django.contrib.admin',
     'django.contrib.auth',
