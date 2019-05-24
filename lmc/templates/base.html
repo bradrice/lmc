@@ -34,10 +34,10 @@
         {% wagtailuserbar %}
         {% load menus_tags %}
 {# Your template; perhaps base.html #}
-
+<div class="page-container">
 {% get_menu "main-navigation" as navigation %}
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#">LUMC</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -50,17 +50,41 @@
         </li>
     {% endfor %}
       </ul>
-      <form class="form-inline my-2 my-lg-0">
+      <!-- <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
+      </form> -->
     </div>
   </nav>
-
-        <div class="container-fluid">
+<div id="body-content">
             {% block content %}{% endblock %}
+</div>
+    <footer id="lmc-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 block-content">
+                       <p>
+                            Address:<br/>
+                            6201 Lafayette Road <br/>
+            Medina Ohio, 44256
+                       </p>
+                       <p><a target="_blank" href="https://www.google.com/maps/place/6201+Lafayette+Rd,+Medina,+OH+44256/@41.104867,-81.9338087,17z/data=!3m1!4b1!4m5!3m4!1s0x8830b6e9e00649f3:0xdd000b04ca33becd!8m2!3d41.104863!4d-81.93162">Map it</a></p>
+                </div>
+                <div class="col-sm-6 block-content">
+                        <p>
+                            Phone:
+                            (330) 725-6176
+                        </p>
+                        <p>
+                            Email:
+                            <a href="mailto:info@lafayetteumc.net">info@lafayetteumc.net</a>
+                        </p>
+                </div>
+            </div>
+            
         </div>
-        
+    </footer>
+</div>    
         {# Global javascript #}
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
