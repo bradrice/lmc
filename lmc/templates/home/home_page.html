@@ -24,8 +24,16 @@
     </div>
     <div class="main-content">
         <div class="row">
-            <div class="col-sm-12">
-                <div id="feature">{{ self.feature_story | richtext }}</div>
+            <div class="col-sm-6">
+                <div class="feature">
+                    <div class="feature-body">
+                        <h5 class="feature-title">{{ self.feature_title }}</h5>
+                        <p class="feature-text">{{ self.feature_story | richtext }}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+
             </div>
         </div>
         <div class="row">
