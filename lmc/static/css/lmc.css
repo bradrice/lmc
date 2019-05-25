@@ -89,3 +89,24 @@ footer a {
     background-color: rgba(32, 21, 44, 80%);
     text-align: center;
 }
+
+.richtext-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.feature {
+    border: 1px solid #20152c;
+    margin: 1em 1em 1em 0em;
+    border-radius: 5px;
+}
+
+.feature-title {
+    background: #20152c;
+    padding: .5rem;
+    color: #fff;
+}
+
+.feature .rich-text {
+    padding: .5rem;
+}
