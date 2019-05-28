@@ -49,6 +49,7 @@ class HomePage(Page):
     )
     feature_title = models.CharField(max_length=100, blank=False, null=True)
     feature_story = RichTextField(blank=True)
+    about_story = RichTextField(blank=True)
 
 
     content_panels = Page.content_panels + [
@@ -64,6 +65,7 @@ class HomePage(Page):
         MultiFieldPanel([
             FieldPanel("feature_title"),
             FieldPanel("feature_story"),
+            FieldPanel("about_story")
         ]),
         MultiFieldPanel(
             [InlinePanel("carousel_images", max_num=5, min_num=1, label="Image")],
