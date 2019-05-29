@@ -1,8 +1,8 @@
-/* .page-container {
+.page-container {
     display: flex;
     height: 100vh;
     flex-direction: column;
-} */
+}
 
 #body-content {
     flex: 1;
@@ -109,14 +109,4 @@ footer a {
 
 .feature .rich-text {
     padding: .5rem;
-}
-
-/* calendar overrides */
-
-.calendar thead tr.heading th {
-    background-color: #20152c;
-}
-
-.calendar tbody tr td.today {
-    background: #cb95aa;
 }
