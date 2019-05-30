@@ -133,6 +133,25 @@ footer a {
     background: #cb95aa;
 }
 
-a.active {
+li.active {
     background-color: #dab3a7;
+}
+
+.navbar {
+    padding-left: 0;
+    padding-right: 0
+}
+
+.navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+@media (min-width: 576px) { 
+    .navbar {
+        padding-top: .5rem;
+        padding-right: 1rem;
+        padding-bottom: 0;
+        padding-left: 1rem;
+    }
 }
