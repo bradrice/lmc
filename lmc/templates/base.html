@@ -45,14 +45,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         {% for item in navigation.menu_items.all %}
-        <li class="nav-item">
-            {% if item.link in request.path %}
-            <a href="{{ item.link }}" class="nav-link active" {% if item.open_in_new_tab %} target="_blank"{% endif %}>{{ item.title }}</a>
-            {% else %}
+        <li class="nav-item {{item.link|active:request.path}}">
             <a href="{{ item.link }}" class="nav-link" {% if item.open_in_new_tab %} target="_blank"{% endif %}>{{ item.title }}</a>
-            {% endif %}
         </li>
-    {% endfor %}
+        {% endfor %}
       </ul>
       <!-- <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
