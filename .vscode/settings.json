@@ -1,3 +1,14 @@
 {
-    "python.venvPath": "~/source/websites/repos/lmc-env"
+    "folders": [
+        {
+            "path": "~/source/websites/repos/"
+        }
+    ],
+    "settings": {
+        "python.venvPath": "~/envs/lmc-env"
+    },
+    "python.pythonPath": "/Users/brice/envs/lmc-env/bin/python",
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": true
 }

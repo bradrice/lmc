@@ -132,3 +132,7 @@ footer a {
 .calendar tbody tr td.today {
     background: #cb95aa;
 }
+
+a.active {
+    background-color: #dab3a7;
+}
