@@ -34,7 +34,7 @@ class BlogListingPage(Page):
     def get_context(self, request, *args, **kwargs):
         """Adding custom stuff to our context."""
         context = super().get_context(request, *args, **kwargs)
-        context["posts"] = BlogDetailPage.objects.live().public()
+        context["posts"] = BlogDetailPage.objects.live().public().order_by('-date_composed')
         return context
 
 

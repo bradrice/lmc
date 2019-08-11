@@ -21,7 +21,7 @@ STATIC_URL = 'https://static.lafayetteumc.com'
 # MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = 'https://media.lafayetteumc.com'
 # MEDIA_URL = '/media/'
-MEDIA_ROOR = '/var/www/html/media.lafayetteumc.net/public_html'
+MEDIA_ROOT = '/var/www/html/media.lafayetteumc.net/public_html'
 
 try:
     from .local import *
