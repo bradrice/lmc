@@ -177,7 +177,7 @@ BASE_URL = 'http://lafayetteumc.com'
 # Joyous settings
 
 
-JOYOUS_THEME_CSS = "/static/joyous/css/joyous_coast_theme.css"
+JOYOUS_THEME_CSS = "/static/joyous/css/joyous.css"
 JOYOUS_DATE_FORMAT = "l jS \\o\\f F X"
 JOYOUS_DATE_SHORT_FORMAT = "j F Y"
 JOYOUS_TIME_FORMAT = "fq"
