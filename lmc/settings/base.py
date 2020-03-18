@@ -173,3 +173,11 @@ WAGTAIL_SITE_NAME = "lmc"
 # Base URL to use when referring to full URLs within the Wagtail admin backend -
 # e.g. in notification emails. Don't include '/admin' or a trailing slash
 BASE_URL = 'http://lafayetteumc.com'
+
+# Joyous settings
+
+
+JOYOUS_THEME_CSS = "/static/joyous/css/joyous_coast_theme.css"
+JOYOUS_DATE_FORMAT = "l jS \\o\\f F X"
+JOYOUS_DATE_SHORT_FORMAT = "j F Y"
+JOYOUS_TIME_FORMAT = "fq"
