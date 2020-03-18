@@ -14,14 +14,14 @@ with open('/usr/local/secret/lmc/secretkey.txt') as f:
     SECRET_KEY = f.read().strip()
 
     # STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-STATIC_ROOT = '/var/www/html/static.lafayetteumc.net/public_html'
+STATIC_ROOT = '/var/www/html/static.lafayetteumc.net/public_html/'
 # STATIC_URL = '/static/'
 STATIC_URL = 'https://static.lafayetteumc.com'
 
 # MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = 'https://media.lafayetteumc.com'
 # MEDIA_URL = '/media/'
-MEDIA_ROOT = '/var/www/html/media.lafayetteumc.net/public_html'
+MEDIA_ROOT = '/var/www/html/media.lafayetteumc.net/public_html/'
 
 try:
     from .local import *
