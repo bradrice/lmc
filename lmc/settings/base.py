@@ -150,13 +150,13 @@ STATICFILES_DIRS = [
     os.path.join(PROJECT_DIR, 'static'),
 ]
 
-    # STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_ROOT = '/var/www/html/static.lafayetteumc.net/public_html/'
 # STATIC_URL = '/static/'
-STATIC_URL = 'https://static.lafayetteumc.com'
+STATIC_URL = 'https://static.lafayetteumc.com/'
 
 # MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-MEDIA_URL = 'https://media.lafayetteumc.com'
+MEDIA_URL = 'https://media.lafayetteumc.com/'
 # MEDIA_URL = '/media/'
 MEDIA_ROOT = '/var/www/html/media.lafayetteumc.net/public_html/'
 
