@@ -48,9 +48,8 @@ INSTALLED_APPS = [
     'modelcluster',
     'taggit',
     'wagtail.contrib.modeladmin',
-
-    'django.contrib.admin',
     'ls.joyous',
+    'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
