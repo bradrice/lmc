@@ -20,6 +20,10 @@ body {
     flex: 1 1 auto;
 }
 
+.content {
+    padding: 1 rem;
+}
+
 .home-head {
     border-radius: 0;
     background-size: cover; 
