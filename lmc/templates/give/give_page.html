@@ -2,5 +2,15 @@
 {% load wagtailcore_tags %}
 {% load wagtailcore_tags wagtailimages_tags %}
 
-<h1> Greetings </h1> 
-<p> Hello, world! </p>
+{% block content %}
+<div class="content">
+    <h1> Give </h1> 
+    <p>Use this form to give to the church online.</p>
+    <iframe style="width: 800px; height: 460px; border: 1px solid #d3d3d3" src="https://gp.vancopayments.com/gpo/#/291161e0-1447-4869-9141-fe0e909">
+        <p>Your browser does not support iframe.</p>
+       </iframe>
+    <h2>Checks may also be sent in the mail:</h2>
+    <p>Lafayette United Methodist Church<br />
+        6201 Lafayette Rd, Medina, OH 44256</p>
+</div>
+{% endblock %}
