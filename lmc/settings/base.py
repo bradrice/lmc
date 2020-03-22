@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     'standard',
     'lumccal',
     'blog',
+    'give',
 
     'wagtail.contrib.forms',
     'wagtail.contrib.redirects',
